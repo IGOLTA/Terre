@@ -1,0 +1,15 @@
+# ninja log v5
+0	1137	1653798239225626694	CMakeFiles/Terre.dir/src/resources/shader/Program.cpp.o	9936afd76c8de60d
+1	515	1653984359195844608	CMakeFiles/Terre.dir/src/ui/elements/Element.cpp.o	76d23ebf749a2da4
+1	522	1653984359202844607	CMakeFiles/Terre.dir/src/ui/Panel.cpp.o	82412372d2bdcfb9
+1	1096	1653993036657433639	CMakeFiles/Terre.dir/src/ui/custom/MainMenu.cpp.o	1ed02568cb0082df
+0	15	1654017493414189228	build.ninja	35fddb8de63351b3
+0	612	1653400606838565426	CMakeFiles/Terre.dir/src/glad.c.o	213a134f25a81cb9
+1	1184	1653993133958429031	CMakeFiles/Terre.dir/src/ui/elements/Image.cpp.o	a5ef78490051b74
+1	1281	1653992801682444768	CMakeFiles/Terre.dir/src/resources/Texture.cpp.o	bfc83507c89893f2
+2	1693	1653652022843801775	CMakeFiles/Terre.dir/src/resources/shader/ShaderLoader.cpp.o	1a0771a64aad682f
+1	1564	1654015123249301480	CMakeFiles/Terre.dir/src/main.cpp.o	33067b0e9817b5c3
+1	889	1653797795230647722	CMakeFiles/Terre.dir/src/resources/shader/Shader.cpp.o	4d2270fdfbb272a0
+1	1670	1654015214877297140	CMakeFiles/Terre.dir/src/Game.cpp.o	fffbba1d8cbf6956
+1671	1817	1654015215023297133	Terre	112afea213fc6b18
+0	908	1653798238995626705	CMakeFiles/Terre.dir/src/resources/Mesh.cpp.o	f237ceecce4548f5
