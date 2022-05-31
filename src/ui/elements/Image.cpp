@@ -88,19 +88,19 @@ void ui::Image::refreshSize() {
     }
 }
 
-void ui::Image::update(double deltaTime) {
-
+void ui::Image::update(double deltaTime, const SDL_Event*  e) {
+    Element::update(deltaTime, e);
 
 }
 
 void ui::Image::draw() {
-        gl::glBindTexture(gl::GL_TEXTURE_2D, *texture);
+        glBindTexture(GL_TEXTURE_2D, *texture);
         resources::ShaderLoader::getPrograms().at("src/shaders/ui/unlit-image")->setInt("aTexture", 0);
-        gl::glUseProgram(*resources::ShaderLoader::getPrograms().at("src/shaders/ui/unlit-image"));
-        gl::glActiveTexture(gl::GL_TEXTURE0);
-        gl::glBindTexture(gl::GL_TEXTURE_2D, *texture);
-        gl::glBindVertexArray(*mesh);
-        gl::glDrawElements(gl::GL_TRIANGLES, mesh->getIndicesSize(), gl::GL_UNSIGNED_INT, 0);
+        glUseProgram(*resources::ShaderLoader::getPrograms().at("src/shaders/ui/unlit-image"));
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, *texture);
+        glBindVertexArray(*mesh);
+        glDrawElements(GL_TRIANGLES, mesh->getIndicesSize(), GL_UNSIGNED_INT, 0);
 }
 
 void ui::Image::setTexture(resources::Texture* texture) {

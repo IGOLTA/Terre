@@ -6,7 +6,7 @@
 #include <stdexcept>
 #include <vector>
 #include <iostream>
-#include <glbinding/gl/gl.h>
+#include <glad/glad.h>
 
 namespace resources {
     class Shader {

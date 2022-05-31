@@ -25,6 +25,8 @@ namespace ui {
         resources::Texture* texture = nullptr;
         resources::Mesh* mesh = nullptr;
         ImageFitting fitting = ImageFitting::WARP;
+    protected:
+        void refreshSize();
 
     public:
 
@@ -34,9 +36,8 @@ namespace ui {
         void setTexture(resources::Texture* texture);
         void setFitting(ImageFitting fitting);
 
-        void update(double deltaTime);
+        void update(double deltaTime, const SDL_Event*  e);
         void draw();
-        void refreshSize();
     };
 }
 

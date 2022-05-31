@@ -2,7 +2,7 @@
 #define OPENGL_CAVE_GENERATION_PROGRAM_H
 
 #include "Shader.hpp"
-#include <glbinding/gl/gl.h>
+#include <glad/glad.h>
 
 
 namespace resources {

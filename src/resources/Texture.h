@@ -8,7 +8,7 @@
 #include <string>
 #include <stdexcept>
 #include <stb/stb_image.h>
-#include <glbinding/gl/gl.h>
+#include <glad/glad.h>
 #include <iostream>
 
 namespace resources {

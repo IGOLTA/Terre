@@ -11,24 +11,24 @@ namespace resources {
     {
         indicesSize = indices.size();
 
-        gl::glGenVertexArrays(1, &VAO);
-        gl::glGenBuffers(1, &VBO);
-        gl::glGenBuffers(1, &EBO);
+        glGenVertexArrays(1, &VAO);
+        glGenBuffers(1, &VBO);
+        glGenBuffers(1, &EBO);
 
-        gl::glBindVertexArray(VAO);
+        glBindVertexArray(VAO);
 
-        glBindBuffer(gl::GL_ARRAY_BUFFER, VBO);
-        glBufferData(gl::GL_ARRAY_BUFFER, vertices.size() * sizeof(float), this->vertices.data(), gl::GL_STATIC_DRAW);
+        glBindBuffer(GL_ARRAY_BUFFER, VBO);
+        glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(float), this->vertices.data(), GL_STATIC_DRAW);
 
-        glBindBuffer(gl::GL_ELEMENT_ARRAY_BUFFER, EBO);
-        glBufferData(gl::GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), this->indices.data(), gl::GL_STATIC_DRAW);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned int), this->indices.data(), GL_STATIC_DRAW);
 
-        glVertexAttribPointer(0, 3, gl::GL_FLOAT, gl::GL_FALSE, 5 * sizeof(float), (void *)0);
-        gl::glEnableVertexAttribArray(0);
-        glVertexAttribPointer(1, 2, gl::GL_FLOAT, gl::GL_FALSE, 5 * sizeof(float), (void *)(3*sizeof(float)));
-        gl::glEnableVertexAttribArray(1);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)0);
+        glEnableVertexAttribArray(0);
+        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *)(3*sizeof(float)));
+        glEnableVertexAttribArray(1);
 
-        gl::glBindVertexArray(0);
+        glBindVertexArray(0);
     }
 
     Mesh::operator unsigned int() const {
@@ -41,8 +41,8 @@ namespace resources {
 
 
     Mesh::~Mesh() {
-        gl::glDeleteBuffers(1, &EBO);
-        gl::glDeleteBuffers(1, &VBO);
-        gl::glDeleteVertexArrays(1, &VAO);
+        glDeleteBuffers(1, &EBO);
+        glDeleteBuffers(1, &VBO);
+        glDeleteVertexArrays(1, &VAO);
     }
 }

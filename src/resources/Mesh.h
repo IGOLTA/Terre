@@ -6,7 +6,7 @@
 #define TERRE_MESH_H
 
 #include <vector>
-#include <glbinding/gl/gl.h>
+#include <glad/glad.h>
 #include <iostream>
 
 namespace resources {

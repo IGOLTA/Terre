@@ -143,7 +143,7 @@ build CMakeFiles/Terre.dir/src/resources/shader/ShaderLoader.cpp.o: CXX_COMPILER
 
 build Terre: CXX_EXECUTABLE_LINKER__Terre_Debug CMakeFiles/Terre.dir/src/glad.c.o CMakeFiles/Terre.dir/src/resources/shader/Program.cpp.o CMakeFiles/Terre.dir/src/resources/shader/Shader.cpp.o CMakeFiles/Terre.dir/src/resources/Mesh.cpp.o CMakeFiles/Terre.dir/src/resources/Texture.cpp.o CMakeFiles/Terre.dir/src/ui/custom/MainMenu.cpp.o CMakeFiles/Terre.dir/src/main.cpp.o CMakeFiles/Terre.dir/src/Game.cpp.o CMakeFiles/Terre.dir/src/ui/Panel.cpp.o CMakeFiles/Terre.dir/src/ui/elements/Image.cpp.o CMakeFiles/Terre.dir/src/ui/elements/Element.cpp.o CMakeFiles/Terre.dir/src/resources/shader/ShaderLoader.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -lglbinding
+  LINK_LIBRARIES = -lSDL2
   OBJECT_DIR = CMakeFiles/Terre.dir
   POST_BUILD = :
   PRE_LINK = :

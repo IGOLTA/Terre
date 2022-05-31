@@ -19,7 +19,7 @@ namespace ui {
         std::string name;
     protected:
         Panel* getParent();
-
+        virtual void refreshSize();
     public:
         std::string getName();
 
@@ -37,9 +37,8 @@ namespace ui {
 
         Element(Panel* parent, std::string name);
 
-        virtual void update(double deltaTime);
+        virtual void update(double deltaTime, const SDL_Event*  e);
         virtual void draw();
-        virtual void refreshSize();
     };
 }
 

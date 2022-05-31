@@ -6,6 +6,8 @@
 #define TERRE_PANEL_H
 
 #include <vector>
+#include <SDL2/SDL.h>
+
 #include "elements/Element.h"
 
 namespace ui {
@@ -25,10 +27,9 @@ namespace ui {
         const unsigned int* getWidth();
         const unsigned int* getHeight();
 
-        virtual void elementEventCallback(std::string name, std::string event);
-        void sizeCallback();
+        virtual void elementEventCallback(std::string name, std::string event, std::vector<char> data);
 
-        void update(double deltaTime);
+        void update(double deltaTime, const SDL_Event*  e);
         void draw();
 
         ~Panel();

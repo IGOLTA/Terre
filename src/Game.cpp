@@ -56,38 +56,41 @@ void Game::setupOpenGLContext() {
     if (context == NULL)
         throw std::runtime_error("Failed to create GL context " + std::string(SDL_GetError()));
 
-    glbinding::initialize([](const char * name) { return reinterpret_cast<glbinding::ProcAddress>(SDL_GL_GetProcAddress(name)); }, false);
+    gladLoadGLLoader(SDL_GL_GetProcAddress);
 
-    //SDL_GL_SetSwapInterval(1);
+    SDL_GL_SetSwapInterval(1);
 
-    gl::glViewport(0, 0, windowWidth, windowHeight);
+    glViewport(0, 0, windowWidth, windowHeight);
 }
 
 void Game::run() {
     launchGame();
 
     SDL_Event e;
-    while (SDL_PollEvent(&e)) {
-        float deltaTime = (SDL_GetTicks64() - computeStart)/1000.0f;
-        computeStart = SDL_GetTicks64();
-        compute(deltaTime);
-        render();
-        SDL_GL_SwapWindow(window);
+    while (true) {
+        SDL_PollEvent(&e);
 
         if(e.type == SDL_QUIT) break;
+        eventsHandling(&e);
+
+        float deltaTime = (SDL_GetTicks64() - computeStart)/1000.0f;
+        computeStart = SDL_GetTicks64();
+        compute(deltaTime, &e);
+        render();
+
+        SDL_GL_SwapWindow(window);
     }
 
     quitGame();
 }
 
-void Game::compute(double deltaTime) {
+void Game::compute(double deltaTime, const SDL_Event*  e) {
     for(auto it = panels.begin(); it != panels.end(); it++)
-        if(it->first) it->second->update(deltaTime);
+        if(it->first) it->second->update(deltaTime, e);
 }
 
 void Game::render() {
-
-    //gl::glClear(gl::GL_COLOR_BUFFER_BIT | gl::GL_DEPTH_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     for(auto it = panels.begin(); it != panels.end(); it++)
         if(it->first) it->second->draw();
@@ -98,4 +101,21 @@ void Game::cleanup() {
     for(auto it = panels.begin(); it != panels.end(); it++) delete it->second;
     SDL_DestroyWindow(window);
     SDL_Quit();
+}
+
+void Game::eventsHandling(const SDL_Event* e) {
+    switch (e->type) {
+        case SDL_WINDOWEVENT:
+            windowEvents(e);
+            break;
+    }
+}
+
+void Game::windowEvents(const SDL_Event *e) {
+    switch (e->window.event) {
+        case SDL_WINDOWEVENT_SIZE_CHANGED:
+            windowWidth = e->window.data1;
+            windowHeight = e->window.data2;
+            glViewport(0, 0, windowWidth, windowHeight);
+    }
 }

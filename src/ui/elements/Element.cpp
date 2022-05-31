@@ -50,8 +50,9 @@ std::string ui::Element::getName() {
     return name;
 }
 
-void ui::Element::update(double deltaTime) {
-
+void ui::Element::update(double deltaTime, const SDL_Event*  e) {
+    if(e->type == SDL_WINDOWEVENT && e->window.event == SDL_WINDOWEVENT_SIZE_CHANGED)
+        refreshSize();
 }
 
 void ui::Element::draw() {

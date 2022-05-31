@@ -14,10 +14,10 @@ namespace resources {
 
         switch (type) {
             case VERTEX:
-                shaderId = gl::glCreateShader(gl::GL_VERTEX_SHADER);
+                shaderId = glCreateShader(GL_VERTEX_SHADER);
                 break;
             case FRAGMENT:
-                shaderId = gl::glCreateShader(gl::GL_FRAGMENT_SHADER);
+                shaderId = glCreateShader(GL_FRAGMENT_SHADER);
                 break;
             default:
                 throw std::runtime_error("Unsupported shader type " + type);
@@ -27,15 +27,15 @@ namespace resources {
         int size = source.size();
 
 
-        gl::glShaderSource(shaderId, 1, &shaderSource, &size);
-        gl::glCompileShader(shaderId);
+        glShaderSource(shaderId, 1, &shaderSource, &size);
+        glCompileShader(shaderId);
 
         int success;
         char infoLog[512];
-        glGetShaderiv(shaderId, gl::GL_COMPILE_STATUS, &success);
+        glGetShaderiv(shaderId, GL_COMPILE_STATUS, &success);
 
         if (!success) {
-            gl::glGetShaderInfoLog(shaderId, 512, NULL, infoLog);
+            glGetShaderInfoLog(shaderId, 512, NULL, infoLog);
             throw std::runtime_error("Failed to compile shader " + std::string(infoLog));
         }
     }
@@ -61,7 +61,7 @@ namespace resources {
     }
 
     Shader::~Shader() {
-        gl::glDeleteShader(shaderId);
+        glDeleteShader(shaderId);
     }
 
     Shader::ShaderType Shader::getType() const {

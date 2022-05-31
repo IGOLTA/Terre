@@ -11,6 +11,7 @@
 #include <vector>
 #include <utility>
 #include <SDL2/SDL.h>
+#include <glad/glad.h>
 #include <SDL2/SDL_opengl.h>
 
 #include "resources/shader/ShaderLoader.h"
@@ -33,7 +34,7 @@ private:
     static void init();
     static void run();
 
-    static void compute(double deltaTime);
+    static void compute(double deltaTime, const SDL_Event*  e);
     static void render();
 
     static void initializeSDL();
@@ -41,6 +42,8 @@ private:
     static void setupOpenGLContext();
     static void launchGame();
     static void quitGame();
+    static void eventsHandling(const SDL_Event* e);
+    static void windowEvents(const SDL_Event* e);
 public:
     static void launch();
     static void cleanup();

@@ -26,6 +26,6 @@ add_executable(Terre
         src/ui/custom/MainMenu.h
         src/main.cpp src/resources/shader/ShaderLoader.cpp src/resources/shader/ShaderLoader.h)
 
-target_link_libraries(Terre glbinding)
+target_link_libraries(Terre SDL2)
 target_include_directories(Terre PUBLIC include)
 

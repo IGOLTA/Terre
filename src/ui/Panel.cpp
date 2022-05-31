@@ -8,8 +8,8 @@ void ui::Panel::addElement(Element *element) {
     elements.push_back(element);
 }
 
-void ui::Panel::update(double deltaTime) {
-    for(auto it = elements.begin();it != elements.end(); it++) (*it)->update(deltaTime);
+void ui::Panel::update(double deltaTime, const SDL_Event*  e) {
+    for(auto it = elements.begin();it != elements.end(); it++) (*it)->update(deltaTime, e);
 }
 
 void ui::Panel::draw() {
@@ -25,14 +25,12 @@ ui::Panel::~Panel() {
     for(auto it = elements.begin();it != elements.end(); it++) delete *it;
 }
 
-void ui::Panel::sizeCallback() {
-    for(auto it = elements.begin();it != elements.end(); it++) (*it)->refreshSize();
-}
-
 ui::Element* ui::Panel::getElement(std::string name) {
     for(auto it = elements.begin();it != elements.end(); it++) {
         if((*it)->getName() == name) return *it;
     }
+
+    return nullptr;
 }
 
 void ui::Panel::elementEventCallback(std::string name, std::string event) {
