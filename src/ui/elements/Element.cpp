@@ -20,10 +20,12 @@ void ui::Element::setWidthRatio(float x) {
 
 void ui::Element::setXRatio(float x) {
     this->xRatio = x;
+    refreshSize();
 }
 
 void ui::Element::setYRatio(float y) {
     this->yRatio = y;
+    refreshSize();
 }
 
 float ui::Element::getHeightRatio() {
@@ -40,6 +42,14 @@ float ui::Element::getXRatio() {
 
 float ui::Element::getYRatio() {
     return yRatio;
+}
+
+int ui::Element::getZIndex() {
+    return zIndex;
+}
+
+void ui::Element::setZIndex(int z) {
+    this->zIndex = z;
 }
 
 ui::Panel *ui::Element::getParent() {

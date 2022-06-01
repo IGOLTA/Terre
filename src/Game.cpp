@@ -60,7 +60,16 @@ void Game::setupOpenGLContext() {
 
     SDL_GL_SetSwapInterval(1);
 
-    glViewport(0, 0, windowWidth, windowHeight);
+    SDL_Event firstResize;
+    firstResize.type = SDL_WINDOWEVENT;
+    firstResize.window.type = SDL_WINDOWEVENT;
+    firstResize.window.timestamp = SDL_GetTicks();
+    firstResize.window.windowID = SDL_GetWindowID(window);
+    firstResize.window.event = SDL_WINDOWEVENT_SIZE_CHANGED;
+    firstResize.window.data1 = windowWidth;
+    firstResize.window.data2 = windowHeight;
+
+    SDL_PushEvent(&firstResize);
 }
 
 void Game::run() {
@@ -68,18 +77,18 @@ void Game::run() {
 
     SDL_Event e;
     while (true) {
-        SDL_PollEvent(&e);
+        while (SDL_PollEvent(&e)){
+            if(e.type == SDL_QUIT) goto stopGameLoop;
+            eventsHandling(&e);
 
-        if(e.type == SDL_QUIT) break;
-        eventsHandling(&e);
-
-        float deltaTime = (SDL_GetTicks64() - computeStart)/1000.0f;
-        computeStart = SDL_GetTicks64();
-        compute(deltaTime, &e);
+            float deltaTime = (SDL_GetTicks64() - computeStart)/1000.0f;
+            computeStart = SDL_GetTicks64();
+            compute(deltaTime, &e);
+        }
         render();
-
         SDL_GL_SwapWindow(window);
     }
+    stopGameLoop:
 
     quitGame();
 }
@@ -99,6 +108,7 @@ void Game::render() {
 
 void Game::cleanup() {
     for(auto it = panels.begin(); it != panels.end(); it++) delete it->second;
+    SDL_GL_DeleteContext(context);
     SDL_DestroyWindow(window);
     SDL_Quit();
 }

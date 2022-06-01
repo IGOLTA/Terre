@@ -14,6 +14,7 @@ namespace ui {
     class Element {
     private:
         float xRatio = -1, yRatio = -1, widthRatio = 2, heightRatio = 2;
+        int zIndex;
 
         Panel* parent;
         std::string name;
@@ -26,8 +27,12 @@ namespace ui {
         void setXRatio(float x);
         void setYRatio(float y);
 
+        void setZIndex(int z);
+
         float getXRatio();
         float getYRatio();
+
+        int getZIndex();
 
         void setWidthRatio(float x);
         void setHeightRatio(float y);

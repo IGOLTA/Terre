@@ -6,7 +6,11 @@
 #define TERRE_PANEL_H
 
 #include <vector>
+#include <array>
+#include <iostream>
 #include <SDL2/SDL.h>
+#include <cstring>
+#include <thread>
 
 #include "elements/Element.h"
 
@@ -18,7 +22,18 @@ namespace ui {
         const unsigned int* height;
         std::vector<Element*> elements;
 
+        int lastLeftMouseDownX, lastLeftMouseDownY;
+        void mouseButtonDown(const SDL_Event* e);
+        void mouseButtonUp(const SDL_Event* e);
+
+        std::array<float, 2> windowToViewportCoords(int x, int y);
     protected:
+        enum class PanelEvent {
+            LEFT_CLICKED
+        };
+
+        virtual void eventCallback(Element*, PanelEvent event, void* data);
+
         void addElement(Element* element);
         Element* getElement(std::string name);
     public:
@@ -26,8 +41,6 @@ namespace ui {
 
         const unsigned int* getWidth();
         const unsigned int* getHeight();
-
-        virtual void elementEventCallback(std::string name, std::string event, std::vector<char> data);
 
         void update(double deltaTime, const SDL_Event*  e);
         void draw();

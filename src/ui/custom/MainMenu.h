@@ -12,7 +12,7 @@ namespace ui {
 
     class MainMenu : public Panel {
     private:
-        void elementEventCallback(std::string name, std::string event);
+        void eventCallback(Element*, PanelEvent event, void* data);
 
     public:
         MainMenu(const unsigned int* width, const unsigned int* height);
