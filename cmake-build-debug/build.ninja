@@ -40,116 +40,6 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /home/louis/Disque$ Secondaire/dev/C++/Terre/cmake-build-debug/
-# =============================================================================
-# Object build statements for EXECUTABLE target Terre
-
-
-#############################################
-# Order-only phony target for Terre
-
-build cmake_object_order_depends_target_Terre: phony || CMakeFiles/Terre.dir
-
-build CMakeFiles/Terre.dir/src/glad.c.o: C_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/glad.c || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/glad.c.o.d
-  FLAGS = -g
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src
-
-build CMakeFiles/Terre.dir/src/resources/shader/Program.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/resources/shader/Program.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/resources/shader/Program.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/resources/shader
-
-build CMakeFiles/Terre.dir/src/resources/shader/Shader.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/resources/shader/Shader.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/resources/shader/Shader.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/resources/shader
-
-build CMakeFiles/Terre.dir/src/resources/Mesh.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/resources/Mesh.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/resources/Mesh.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/resources
-
-build CMakeFiles/Terre.dir/src/resources/Texture.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/resources/Texture.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/resources/Texture.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/resources
-
-build CMakeFiles/Terre.dir/src/ui/custom/MainMenu.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/ui/custom/MainMenu.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/ui/custom/MainMenu.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/ui/custom
-
-build CMakeFiles/Terre.dir/src/main.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/main.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/main.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src
-
-build CMakeFiles/Terre.dir/src/Game.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/Game.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/Game.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src
-
-build CMakeFiles/Terre.dir/src/ui/Panel.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/ui/Panel.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/ui/Panel.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/ui
-
-build CMakeFiles/Terre.dir/src/ui/elements/Image.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/ui/elements/Image.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/ui/elements/Image.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/ui/elements
-
-build CMakeFiles/Terre.dir/src/ui/elements/Element.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/ui/elements/Element.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/ui/elements/Element.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/ui/elements
-
-build CMakeFiles/Terre.dir/src/resources/shader/ShaderLoader.cpp.o: CXX_COMPILER__Terre_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/src/resources/shader/ShaderLoader.cpp || cmake_object_order_depends_target_Terre
-  DEP_FILE = CMakeFiles/Terre.dir/src/resources/shader/ShaderLoader.cpp.o.d
-  FLAGS = -g -std=gnu++20
-  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/include"
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  OBJECT_FILE_DIR = CMakeFiles/Terre.dir/src/resources/shader
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target Terre
-
-
-#############################################
-# Link the executable Terre
-
-build Terre: CXX_EXECUTABLE_LINKER__Terre_Debug CMakeFiles/Terre.dir/src/glad.c.o CMakeFiles/Terre.dir/src/resources/shader/Program.cpp.o CMakeFiles/Terre.dir/src/resources/shader/Shader.cpp.o CMakeFiles/Terre.dir/src/resources/Mesh.cpp.o CMakeFiles/Terre.dir/src/resources/Texture.cpp.o CMakeFiles/Terre.dir/src/ui/custom/MainMenu.cpp.o CMakeFiles/Terre.dir/src/main.cpp.o CMakeFiles/Terre.dir/src/Game.cpp.o CMakeFiles/Terre.dir/src/ui/Panel.cpp.o CMakeFiles/Terre.dir/src/ui/elements/Image.cpp.o CMakeFiles/Terre.dir/src/ui/elements/Element.cpp.o CMakeFiles/Terre.dir/src/resources/shader/ShaderLoader.cpp.o
-  FLAGS = -g
-  LINK_LIBRARIES = -lSDL2
-  OBJECT_DIR = CMakeFiles/Terre.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = Terre
-  TARGET_PDB = Terre.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -175,7 +65,219 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/louis/Disque Secondaire/dev/C++/Terre/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for SHARED_LIBRARY target TerreEngine
+
+
+#############################################
+# Order-only phony target for TerreEngine
+
+build cmake_object_order_depends_target_TerreEngine: phony || TerreEngine/CMakeFiles/TerreEngine.dir
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/glad.c.o: C_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/glad.c || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/glad.c.o.d
+  FLAGS = -g -fPIC
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/Panel.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/ui/Panel.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/Panel.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/ui
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/elements/Element.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/ui/elements/Element.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/elements/Element.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/elements
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/elements/Image.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/ui/elements/Image.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/elements/Image.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/elements
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/Texture.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/resources/Texture.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/Texture.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/Mesh.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/resources/Mesh.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/Mesh.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/Program.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/resources/shader/Program.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/Program.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/Shader.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/resources/shader/Shader.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/Shader.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/ShaderLoader.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/resources/shader/ShaderLoader.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/ShaderLoader.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader
+
+build TerreEngine/CMakeFiles/TerreEngine.dir/src/level/Tilemap.cpp.o: CXX_COMPILER__TerreEngine_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreEngine/src/level/Tilemap.cpp || cmake_object_order_depends_target_TerreEngine
+  DEFINES = -DTerreEngine_EXPORTS
+  DEP_FILE = TerreEngine/CMakeFiles/TerreEngine.dir/src/level/Tilemap.cpp.o.d
+  FLAGS = -g -fPIC -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  OBJECT_FILE_DIR = TerreEngine/CMakeFiles/TerreEngine.dir/src/level
+
+
+# =============================================================================
+# Link build statements for SHARED_LIBRARY target TerreEngine
+
+
+#############################################
+# Link the shared library TerreEngine/libTerreEngine.so
+
+build TerreEngine/libTerreEngine.so: CXX_SHARED_LIBRARY_LINKER__TerreEngine_Debug TerreEngine/CMakeFiles/TerreEngine.dir/src/glad.c.o TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/Panel.cpp.o TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/elements/Element.cpp.o TerreEngine/CMakeFiles/TerreEngine.dir/src/ui/elements/Image.cpp.o TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/Texture.cpp.o TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/Mesh.cpp.o TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/Program.cpp.o TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/Shader.cpp.o TerreEngine/CMakeFiles/TerreEngine.dir/src/resources/shader/ShaderLoader.cpp.o TerreEngine/CMakeFiles/TerreEngine.dir/src/level/Tilemap.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -lSDL2
+  OBJECT_DIR = TerreEngine/CMakeFiles/TerreEngine.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  SONAME = libTerreEngine.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = TerreEngine/libTerreEngine.so
+  TARGET_PDB = TerreEngine.so.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build TerreEngine/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug/TerreEngine" && /usr/bin/ccmake -S"/home/louis/Disque Secondaire/dev/C++/Terre" -B"/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build TerreEngine/edit_cache: phony TerreEngine/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build TerreEngine/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug/TerreEngine" && /usr/bin/cmake --regenerate-during-build -S"/home/louis/Disque Secondaire/dev/C++/Terre" -B"/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build TerreEngine/rebuild_cache: phony TerreEngine/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/louis/Disque Secondaire/dev/C++/Terre/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target TerreGame
+
+
+#############################################
+# Order-only phony target for TerreGame
+
+build cmake_object_order_depends_target_TerreGame: phony || cmake_object_order_depends_target_TerreEngine
+
+build TerreGame/CMakeFiles/TerreGame.dir/src/Game.cpp.o: CXX_COMPILER__TerreGame_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreGame/src/Game.cpp || cmake_object_order_depends_target_TerreGame
+  DEP_FILE = TerreGame/CMakeFiles/TerreGame.dir/src/Game.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreGame/CMakeFiles/TerreGame.dir
+  OBJECT_FILE_DIR = TerreGame/CMakeFiles/TerreGame.dir/src
+
+build TerreGame/CMakeFiles/TerreGame.dir/src/main.cpp.o: CXX_COMPILER__TerreGame_Debug /home/louis/Disque$ Secondaire/dev/C++/Terre/TerreGame/src/main.cpp || cmake_object_order_depends_target_TerreGame
+  DEP_FILE = TerreGame/CMakeFiles/TerreGame.dir/src/main.cpp.o.d
+  FLAGS = -g -std=gnu++20
+  INCLUDES = -I"/home/louis/Disque Secondaire/dev/C++/Terre/TerreEngine/include"
+  OBJECT_DIR = TerreGame/CMakeFiles/TerreGame.dir
+  OBJECT_FILE_DIR = TerreGame/CMakeFiles/TerreGame.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TerreGame
+
+
+#############################################
+# Link the executable TerreGame/TerreGame
+
+build TerreGame/TerreGame: CXX_EXECUTABLE_LINKER__TerreGame_Debug TerreGame/CMakeFiles/TerreGame.dir/src/Game.cpp.o TerreGame/CMakeFiles/TerreGame.dir/src/main.cpp.o | TerreEngine/libTerreEngine.so || TerreEngine/libTerreEngine.so
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,"/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug/TerreEngine"  TerreEngine/libTerreEngine.so  -lSDL2
+  OBJECT_DIR = TerreGame/CMakeFiles/TerreGame.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = TerreGame/TerreGame
+  TARGET_PDB = TerreGame.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build TerreGame/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug/TerreGame" && /usr/bin/ccmake -S"/home/louis/Disque Secondaire/dev/C++/Terre" -B"/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug"
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build TerreGame/edit_cache: phony TerreGame/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build TerreGame/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd "/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug/TerreGame" && /usr/bin/cmake --regenerate-during-build -S"/home/louis/Disque Secondaire/dev/C++/Terre" -B"/home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build TerreGame/rebuild_cache: phony TerreGame/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
+
+build TerreEngine: phony TerreEngine/libTerreEngine.so
+
+build TerreGame: phony TerreGame/TerreGame
+
+build libTerreEngine.so: phony TerreEngine/libTerreEngine.so
 
 # =============================================================================
 # Folder targets.
@@ -185,7 +287,21 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug
 
-build all: phony Terre
+build all: phony TerreEngine/all TerreGame/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug/TerreEngine
+
+build TerreEngine/all: phony TerreEngine/libTerreEngine.so
+
+# =============================================================================
+
+#############################################
+# Folder: /home/louis/Disque Secondaire/dev/C++/Terre/cmake-build-debug/TerreGame
+
+build TerreGame/all: phony TerreGame/TerreGame
 
 # =============================================================================
 # Built-in targets
@@ -194,14 +310,14 @@ build all: phony Terre
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../TerreEngine/CMakeLists.txt ../TerreGame/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../TerreEngine/CMakeLists.txt ../TerreGame/CMakeLists.txt /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################
